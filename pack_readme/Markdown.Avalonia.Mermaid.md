@@ -31,7 +31,7 @@ You can also set BackgroundColor property to make the background transparent.
 ```
 
 ## ⚠️ First Run Requirement
-The first time a Mermaid diagram is rendered, the library will automatically download a standalone Chromium browser instance (managed by PuppeteerSharp). This one-time setup requires an active internet connection and may take a few moments depending on your network speed.
+The first time a Mermaid diagram is rendered, the library will automatically download a standalone Chromium browser instance (managed by Microsoft.Playwright). This one-time setup requires an active internet connection and may take a few moments depending on your network speed.
 
 ## Markdown example
 ### 
