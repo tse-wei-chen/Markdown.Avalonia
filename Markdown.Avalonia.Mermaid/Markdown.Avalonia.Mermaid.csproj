@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\Markdown.Avalonia.props" />
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFrameworks>$(PackageTargetFrameworks)</TargetFrameworks>
+    <PackageId>ClassIsland.Markdown.Avalonia.Mermaid</PackageId>
+    <Version>$(PackageVersion)</Version>
+    <Authors>tse-wei-chen</Authors>
+    <Copyright>Copyright (c) 2026 tse-wei-chen</Copyright>
+    <PackageReadmeFile>Markdown.Avalonia.Mermaid.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Company />
+    <LangVersion>9</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Markdown.Avalonia.Tight\Markdown.Avalonia.Tight.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\pack_readme\Markdown.Avalonia.Mermaid.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Playwright" Version="1.57.0" />
+  </ItemGroup>
+</Project>
