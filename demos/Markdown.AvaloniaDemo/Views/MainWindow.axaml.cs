@@ -16,7 +16,7 @@ namespace Markdown.AvaloniaDemo.Views
 
             _breadcrumb = this.FindControl<Label>("Breadcrumb");
 #if DEBUG
-            this.AttachDevTools();
+            
 # endif
         }
 

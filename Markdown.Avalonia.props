@@ -4,11 +4,11 @@
     <DemoAppTargetFrameworks>net8</DemoAppTargetFrameworks>
     <TestTargetFrameworks>net8</TestTargetFrameworks>
     <PackageTargetFrameworks>net8</PackageTargetFrameworks>
-    <AvaloniaVersion>11.3.6</AvaloniaVersion>
-    <DemoAvaloniaVersion>11.3.6</DemoAvaloniaVersion>
+    <AvaloniaVersion>12.0.0</AvaloniaVersion>
+    <DemoAvaloniaVersion>12.0.999-cibuild0060150-alpha</DemoAvaloniaVersion>
     <EnableAvaloniaEdit>enabled</EnableAvaloniaEdit>
-    <AvaloniaEditVersion>11.0.0</AvaloniaEditVersion>
-    <AvaloniaSvgVersion>11.0.0</AvaloniaSvgVersion>
+    <AvaloniaEditVersion>12.0.0-rc1</AvaloniaEditVersion>
+    <AvaloniaSvgVersion>12.0.0.5</AvaloniaSvgVersion>
 
     <PackageProjectUrl>https://github.com/ClassIsland/Markdown.Avalonia</PackageProjectUrl>
     
@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageVersion>11.0.3-a1</PackageVersion>
+    <PackageVersion>12.0.0</PackageVersion>
   </PropertyGroup>
 
 </Project>

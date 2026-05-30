@@ -28,7 +28,7 @@ namespace Markdown.Avalonia.Extensions
 
             return new MultiBinding()
             {
-                Bindings = new IBinding[] { brush },
+                Bindings = new [] { brush },
                 Converter = new ComplementaryConverter()
             };
         }

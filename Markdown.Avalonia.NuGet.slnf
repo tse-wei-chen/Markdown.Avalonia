@@ -1,0 +1,14 @@
+{
+  "solution": {
+    "path": "Markdown.Avalonia.sln",
+    "projects": [
+      "ColorDocument.Avalonia\\ColorDocument.Avalonia.csproj",
+      "ColorTextBlock.Avalonia\\ColorTextBlock.Avalonia.csproj",
+      "Markdown.Avalonia\\Markdown.Avalonia.csproj",
+      "Markdown.Avalonia.Html\\Markdown.Avalonia.Html.csproj",
+      "Markdown.Avalonia.Svg\\Markdown.Avalonia.Svg.csproj",
+      "Markdown.Avalonia.SyntaxHigh\\Markdown.Avalonia.SyntaxHigh.csproj",
+      "Markdown.Avalonia.Tight\\Markdown.Avalonia.Tight.csproj"
+    ]
+  }
+}

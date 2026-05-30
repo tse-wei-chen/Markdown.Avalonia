@@ -7,6 +7,7 @@ using Avalonia;
 using Markdown.Avalonia.SyntaxHigh.Extensions;
 using ColorDocument.Avalonia;
 using System.Text;
+using Avalonia.Input.Platform;
 
 namespace Markdown.Avalonia.SyntaxHigh
 {

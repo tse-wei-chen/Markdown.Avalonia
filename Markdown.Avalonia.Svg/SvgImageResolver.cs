@@ -6,12 +6,14 @@ using Svg.Model;
 using Avalonia.Media;
 using Markdown.Avalonia.Utils;
 using System.Threading.Tasks;
+using Svg.Model.Services;
+using Svg.Skia;
 
 namespace Markdown.Avalonia.Svg
 {
     internal class SvgImageResolver : IImageResolver
     {
-        private static readonly AvaloniaAssetLoader _svgAssetLoader = new();
+        private static readonly AvaloniaSvgAssetLoader _svgAssetLoader = new();
 
         public async Task<IImage?> Load(Stream stream)
         {
@@ -19,8 +21,8 @@ namespace Markdown.Avalonia.Svg
             {
                 if (IsSvgFile(stream))
                 {
-                    var document = SvgExtensions.Open(stream);
-                    var picture = document is { } ? SvgExtensions.ToModel(document, _svgAssetLoader, out _, out _) : default;
+                    var document = SvgService.Open(stream);
+                    var picture = document is { } ? SvgSceneRuntime.CreateModel(document, _svgAssetLoader) : default;
                     var svgsrc = new SvgSource() { Picture = picture };
                     return (IImage)new VectorImage() { Source = svgsrc };
                 }

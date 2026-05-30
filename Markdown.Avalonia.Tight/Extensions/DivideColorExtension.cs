@@ -27,7 +27,7 @@ namespace Markdown.Avalonia.Extensions
 
         public override object ProvideValue(IServiceProvider serviceProvider)
         {
-            IBinding left;
+            BindingBase left;
             if (Color.TryParse(_frmKey, out var leftColor))
             {
                 left = new Binding()
@@ -41,7 +41,7 @@ namespace Markdown.Avalonia.Extensions
                 left = lftExt.ProvideValue(serviceProvider);
             }
 
-            IBinding right;
+            BindingBase right;
             if (Color.TryParse(_toKey, out var rightColor))
             {
                 right = new Binding()
@@ -57,7 +57,7 @@ namespace Markdown.Avalonia.Extensions
 
             return new MultiBinding()
             {
-                Bindings = new IBinding[] { left, right },
+                Bindings = new [] { left, right },
                 Converter = new DivideConverter(_relate)
             };
         }

@@ -1,1 +1,1 @@
-dotnet pack -c Release -o .\Packages
+dotnet pack Markdown.Avalonia.NuGet.slnf -c Release -o .\Packages

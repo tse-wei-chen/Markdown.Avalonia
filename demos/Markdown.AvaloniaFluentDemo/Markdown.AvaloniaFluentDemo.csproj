@@ -8,6 +8,7 @@
     <TargetFrameworks>$(DemoAppTargetFrameworks)</TargetFrameworks>
     <LangVersion>9</LangVersion>
     <Nullable>disable</Nullable>
+      <AvaloniaUseCompiledBindingsByDefault>false</AvaloniaUseCompiledBindingsByDefault>
   </PropertyGroup>
   <ItemGroup>
     <AvaloniaResource Include="Assets\**" />
